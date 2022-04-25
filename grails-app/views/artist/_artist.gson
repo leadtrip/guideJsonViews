@@ -1,0 +1,10 @@
+import demo.Artist
+
+model {
+    Artist artist
+}
+
+json {
+    artistName artist.name
+    albums tmpl.album(artist.albums)
+}
